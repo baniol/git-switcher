@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/bower_components/bootstrap/favicon.ico">
+
+    <title>Git Deployer</title>
+
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/bower_components/alertify.js/themes/alertify.core.css" rel="stylesheet">
+    <link href="/bower_components/alertify.js/themes/alertify.bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body role="document">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#">Git Deployer</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="http://csb.local:8080">CSB Local Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+    <div class="alert" id="alerts" role="alert"></div>
+    <div class="row" id="main-container"></div>
+</div>
+
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/lodash/lodash.min.js"></script>
+<script src="/bower_components/mediator-js/mediator.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/alertify.js/lib/alertify.min.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/templates.js"></script>
+<script src="javascripts/repos.js"></script>
+<script src="javascripts/branches.js"></script>
+<script src="javascripts/main.js"></script>
+</body>
+</html>

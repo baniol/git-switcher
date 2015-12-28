@@ -1,0 +1,10 @@
+{
+  "Repo 1": {
+    "path": "./test/test-repo",
+    "hooks": ["ls -lha", "pwd"]
+  },
+  "Repo 2": {
+    "path": "./repo2",
+    "hooks": []
+  }
+}
