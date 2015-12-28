@@ -1,4 +1,4 @@
 #!/bin/bash
 
-tar xfz test/tepo-test/git.tar.gz -C test/repo-test
+tar xfz test/repo-test/git.tar.gz -C test/repo-test
 node_modules/mocha/bin/mocha test
