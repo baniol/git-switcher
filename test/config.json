@@ -1,6 +1,6 @@
 {
   "Repo 1": {
-    "path": "./test/test-repo",
+    "path": "./test/repo-test",
     "hooks": ["ls -lha", "pwd"]
   },
   "Repo 2": {
