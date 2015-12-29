@@ -1,7 +1,7 @@
 {
   "Repo 1": {
     "path": "./test/repo-test",
-    "hooks": ["ls -lha", "pwd"]
+    "hooks": ["echo \"test string\""]
   },
   "Repo 2": {
     "path": "./repo2",
