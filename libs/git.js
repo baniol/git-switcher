@@ -122,7 +122,8 @@ git.checkout = function (repoName, branch) {
   var self = this;
   var path = this.getPath(repoName);
 
-  var cmd = `GIT_DIR="${path}/.git" git checkout -f ${branch}`;
+  var cmd = `GIT_DIR="${path}/.git" GIT_WORK_TREE="${path}" git checkout -f ${branch}`;
+
   try {
     fs.accessSync(path, fs.R_OK);
   }
@@ -166,7 +167,6 @@ function _promisify(cmd, modifier) {
     exec(cmd, function(error, stdout, stderr) {
       if(error) {
         // @TODO logging errors
-        //console.log(error);
         reject(error);
       }
       else {
