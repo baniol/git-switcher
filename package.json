@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "compile": "node scripts/compile-templates.js compile",
     "templates": "node scripts/compile-templates.js",
     "test": "test/test.sh"
   },

@@ -8,8 +8,22 @@ var buildDir = path.join(__dirname, '..', 'public/javascripts');
 
 var fileObject = {};
 
-readTemplates();
-watchTemplates();
+if (process.argv[2] === 'compile') {
+  compileTemplates();
+}
+else {
+  watcher();
+}
+
+function compileTemplates() {
+  readTemplates();
+  writeTemplates();
+}
+
+function watcher() {
+  readTemplates();
+  watchTemplates();
+}
 
 function watchTemplates() {
   watch.watchTree(templateDir, function (f, curr, prev) {
